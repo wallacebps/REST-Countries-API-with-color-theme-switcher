@@ -1,3 +1,4 @@
+//Consumo da API
 fetch('https://restcountries.com/v2/all')
   .then(response => response.json())
   .then(data => {
@@ -16,8 +17,29 @@ fetch('https://restcountries.com/v2/all')
       list.appendChild(item);
     });
   });
-    
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dark mode:
 
 const button = document.getElementById("dark-mode-btn");
 const text = document.getElementById("dark-mode-text");

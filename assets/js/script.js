@@ -20,25 +20,6 @@ fetch('https://restcountries.com/v2/all')
 
  
 
-  function filterByRegion() {
-    const selectedRegion = this.value;
-    let filteredCountries = countries;
-    if(selectedRegion)
-      filteredCountries = countries.filter(country => country.region === selectedRegion);
-    renderFilteredCountries(filteredCountries);
-  }
-  
-  function renderFilteredCountries(filteredCountries) {
-    filteredCountries.forEach(function(country) {
-    const item = document.createElement('li');
-    item.innerHTML = `<p>Name: ${country.name}</p>
-    <p>Population: ${country.population}</p>
-    <p>Region: ${country.region}</p>
-    <p>Capital: ${country.capital}</p>
-    <img src=${country.flag} alt=${country.name}>`;
-    list.appendChild(item);
-  });
-}
 
 
 

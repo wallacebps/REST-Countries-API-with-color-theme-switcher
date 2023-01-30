@@ -21,19 +21,31 @@ nav{
 nav button{
   border: 0;
 }
-#countries{
+#region-select{
   display: flex;
-  flex-direction: column;
-  
-
+  margin-bottom: 2em;
+  margin-left: 4.3em;
+  align-self: flex-start !important;
 }
-#countries li{
+.container{
   margin-bottom: 4em;
   list-style: none;
   text-align: center;
 
 }
-#countries img{
+#countries-container{
+  display: flex;
+  flex-direction: column;
+  
+
+}
+#countries-container li{
+  margin-bottom: 4em;
+  list-style: none;
+  text-align: center;
+
+}
+#countries-container img{
   width: 70%;
   height: 150px;
   border: 1px solid grey;

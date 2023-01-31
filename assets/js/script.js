@@ -1,5 +1,6 @@
 const regionSelect = document.getElementById("region-select");
 const countriesContainer = document.getElementById("countries-container");
+const input = document.querySelector('input');
 
 let countries = [];
 
@@ -26,7 +27,7 @@ function renderCountries() {
   const html = filteredCountries
     .map(
       country => `
-        <div class="country">
+        <div class="country" data-country = "${country.name}">
           <img src="${country.flag}" alt="${country.name} flag">
           <h2>${country.name}</h2>
           <p>Population: ${country.population.toLocaleString()}</p>
@@ -58,17 +59,18 @@ function renderRegions() {
 
 regionSelect.addEventListener("change", renderCountries);
 
+input.addEventListener('keyup', e => {
+  const countryItems = document.querySelectorAll('.country');
+   countryItems.forEach(item => {
+   item.classList.add('d-none');
+    if (item.dataset.country.toLowerCase().includes(e.target.value.toLowerCase())){
+      item.classList.remove('d-none');
+    } 
+  })
+})
 
 
  
-
-
-
-
-
-
-
-
 
 // Dark mode:
 

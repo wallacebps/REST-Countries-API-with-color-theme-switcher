@@ -22,8 +22,8 @@ Eu sou Desenvolvedor Front-end e venho postando meus projetos aqui no Github fre
 
 ## Referência
 
- - [Mozilla](https://www.w3schools.com/)
- - [Awesome README](https://developer.mozilla.org/pt-BR/)
+ - [W3Schools](https://www.w3schools.com/)
+ - [Mozilla](https://developer.mozilla.org/pt-BR/)
  - [Frontend Mentor]((https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca))
 
 

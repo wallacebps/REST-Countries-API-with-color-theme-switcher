@@ -14,11 +14,9 @@ function fetchCountry(params){
         renderRegions();
         console.log(data);
         });
-        .catch((err)=>{
-            console.log(err)
-        });
+       
     }
-window.onload = () => fetchCountry();  
+ 
 
 function renderCountries() {
   let filteredCountries = countries;
@@ -92,3 +90,5 @@ const text = document.getElementById("dark-mode-text");
       text.textContent = " Dark Mode";
     }
 });
+
+window.onload = () => fetchCountry(); 
